@@ -1,0 +1,450 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    #2c1248,
+    #594e8b
+  ); /* gradient from light purple to dark */
+}
+
+/* ================== HEADER ==========================*/
+header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('images/header-img.jpg');
+  background-size: cover;
+  /* height: 70vh; */
+  color: white;
+}
+
+nav {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin-bottom: 6rem;
+}
+
+nav ul,
+nav li {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  /* font-family: 'Orbitron', sans-serif; */
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.hovered-link {
+  text-shadow: 1px 1px 3px #ffffff;
+  transform: translateY(-3px);
+}
+
+.logo-img {
+  width: 120px;
+  height: 120px;
+}
+
+.section-content {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+#header-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#header-paragraph {
+  width: 65%;
+  margin: auto;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  font-size: 1.2rem;
+}
+
+/* ================== WHO IS NASA ==========================*/
+
+.who-is-nasa {
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+#particles-js2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #080e26;
+  background-image: url('');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.who-is-nasa-container {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  padding-bottom: 5%;
+}
+.who-is-nasa h1 {
+  margin: 0;
+  padding: 3rem;
+}
+
+.who-is-nasa .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+}
+
+.white-section {
+  position: relative;
+}
+
+#particles-js3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgb(255, 255, 255);
+  background-image: url('');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* ================== DAILY IMG ==========================*/
+.daily-img-container {
+  text-align: center;
+  margin-bottom: 6%;
+}
+
+.daily-img-container h1 {
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+/* ================== ASTRONAUTS SLIDER ==========================*/
+.swiper {
+  margin-top: 4%;
+  margin-bottom: 3%;
+  width: 60%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper h1 {
+  text-align: center;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+
+.swiper-slide-content p {
+  font-size: 0.8rem;
+  width: 50%;
+  padding: 1rem;
+  border: 2px solid #d3fbff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px rgba(71, 252, 255, 0.181);
+  max-width: 400px;
+  margin: auto;
+  line-height: 1.3;
+  transition: all 0.5s;
+  display: inline-block;
+  background-color: white;
+}
+
+.swiper-slide-content p:hover {
+  border-color: #2c9fc5;
+  box-shadow: 0 0 10px 2px rgba(50, 164, 198, 0.6);
+  transform: scale(1.1);
+  color: #3da8c6;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
+  margin-bottom: 3%;
+}
+
+/* ================== NASA SPACE MISSIONS ==========================*/
+
+.nasa-space-missions {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+.nasa-space-missions h1 {
+  margin: auto;
+  margin-bottom: 3%;
+}
+
+.nasa-space-missions .cards {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  /* flex: 1 0 50%; */
+}
+
+.nasa-space-missions .card {
+  flex: 1 0 40%;
+}
+
+.nasa-space-missions .head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4%;
+}
+
+.nasa-space-missions h3 {
+  border: 2px solid #303b69;
+  background-color: #283157;
+  color: #ffffff;
+  border-radius: 15%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================== BENEFITS OF SPACE EXPOLATION ==========================*/
+
+.benefits-of-exploration {
+  background-color: #283157ff;
+  color: white;
+  padding: 4% 0;
+}
+
+.benefits-of-exploration h1 {
+  text-align: center;
+}
+
+.benefits-of-exploration p {
+  margin: 0;
+}
+
+.benefits-of-exploration .cards {
+  width: 60%;
+  padding-top: 2%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+/* ================== JOIN NASA ==========================*/
+.join-nasa {
+  color: white;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgb(3, 6, 63);
+  background-image: url('');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.join-nasa .wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  gap: 10%;
+}
+.join-nasa img {
+  width: 350px;
+  height: 450px;
+  padding: 6% 0;
+}
+
+.join-nasa h1 {
+  font-size: 2.5rem;
+}
+.join-nasa p {
+  font-size: 1.5rem;
+}
+
+/* ============== COPYRIGHT ================== */
+.copyright {
+  padding: 10px 0;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============== MEDIA QUERIES ================== */
+
+@media (max-width: 600px) {
+  .join-nasa img {
+    width: 300px;
+    height: 410px;
+    padding: 6% 0;
+  }
+  .daily-img-container img {
+    max-width: 350px;
+    max-height: 350px;
+  }
+  .copyright {
+    font-size: 0.55rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #header-title {
+    font-size: 1.7rem;
+  }
+  #header-paragraph {
+    font-size: 0.8rem;
+  }
+  .benefits-of-exploration h1 {
+    font-size: 1.5rem;
+  }
+  .swiper-slide-content p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 1070px) {
+  nav,
+  nav ul {
+    display: block;
+  }
+  .logo-img {
+    display: block;
+    margin: auto;
+  }
+  .who-is-nasa-container {
+    display: block;
+  }
+  .who-is-nasa .card {
+    width: 80%;
+    margin: auto;
+  }
+  .nasa-space-missions .cards {
+    display: block;
+  }
+  .nasa-space-missions .card {
+    border-bottom: 1px solid black;
+  }
+  .nasa-space-missions .card {
+    border-bottom: 1px solid black;
+    padding-bottom: 3%;
+  }
+  .nasa-space-missions .card:last-child {
+    border: none;
+  }
+  .benefits-of-exploration .cards {
+    display: block;
+  }
+  .benefits-of-exploration .card {
+    border-bottom: 1px solid white;
+    padding-bottom: 4%;
+  }
+  .benefits-of-exploration .card:last-child {
+    border: none;
+  }
+  .join-nasa .wrapper {
+    display: block;
+    text-align: center;
+  }
+  .join-nasa h1 {
+    margin-top: 10%;
+  }
+  .join-nasa img {
+    margin-top: 7%;
+  }
+  .swiper-slide-content p {
+    font-size: 0.7rem;
+  }
+  .swiper h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  nav li a {
+    font-size: 1rem;
+  }
+  #header-title {
+    font-size: 2rem;
+  }
+  #header-paragraph {
+    font-size: 1rem;
+  }
+  .swiper-slide-content p {
+    font-size: 0.8rem;
+  }
+}
