@@ -6,8 +6,8 @@ const port = 3000;
 
 const server = http.createServer((req, res) => {
   const options = {
-    hostname: 'api.open-notify.org', // Domain of the Open Notify API
-    port: 80, // HTTP port (since the API doesn't have HTTPS)
+    hostname: 'api.open-notify.org',
+    port: 80,
     path: '/iss-now.json',
     method: 'GET',
   };
@@ -16,13 +16,16 @@ const server = http.createServer((req, res) => {
     apiResponse.pipe(res); // Forward the response
   });
 
-  req.pipe(proxyRequest); // Forward the original request to the proxy
+  req.pipe(proxyRequest);
 
   proxyRequest.on('error', e => {
     console.error(`Problem with proxy request: ${e.message}`);
+    res.end(); // Explicitly end the response
   });
 });
 
 server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+  console.log(
+    `Server running at http://<span class="math-inline">\{hostname\}\:</span>{port}/`
+  );
 });
