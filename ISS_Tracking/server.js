@@ -13,14 +13,14 @@ const server = http.createServer((req, res) => {
   };
 
   const proxyRequest = https.request(options, apiResponse => {
-    apiResponse.pipe(res); // Forward the response
+    apiResponse.pipe(res);
   });
 
   req.pipe(proxyRequest);
 
   proxyRequest.on('error', e => {
     console.error(`Problem with proxy request: ${e.message}`);
-    res.end(); // Explicitly end the response
+    res.end();
   });
 });
 

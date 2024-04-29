@@ -28,12 +28,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const iss_icon = L.icon({
     iconUrl: 'images/iss.png',
-    iconSize: [90, 50], // Size of the marker image
-    iconAnchor: [50, 25], // Point of the icon which will correspond to marker's location
-    popupAnchor: [-3, -76], // Point from which the popup should open relative to the iconAnchor
-    //shadowUrl: 'my-icon-shadow.png', // Optional shadow image
-    //shadowSize: [68, 95], // Size of the shadow image
-    // shadowAnchor: [22, 94],
+    iconSize: [90, 50],
+    iconAnchor: [50, 25],
+    popupAnchor: [-3, -76],
   });
 
   marker = L.marker([50, 50], { icon: iss_icon }).addTo(map);
