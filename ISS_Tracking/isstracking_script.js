@@ -4,7 +4,7 @@ let marker;
 let circle;
 
 function moveISS(marker) {
-  fetch('http://api.open-notify.org/iss-now.json')
+  fetch('https://api.open-notify.org/iss-now.json')
     .then(res => res.json())
     .then(data => {
       const lat = data['iss_position']['latitude'];
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution:
-      '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   }).addTo(map);
 
   const iss_icon = L.icon({
