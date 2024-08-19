@@ -7,7 +7,6 @@ function moveISS(marker) {
   fetch('https://api.wheretheiss.at/v1/satellites/25544')
     .then(res => res.json())
     .then(data => {
-      console.log(data);
       const lat = data.latitude;
       const lng = data.longitude;
       marker.setLatLng([lat, lng]);
