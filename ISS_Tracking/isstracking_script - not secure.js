@@ -4,12 +4,11 @@ let marker;
 let circle;
 
 function moveISS(marker) {
-  fetch('https://api.wheretheiss.at/v1/satellites/25544')
+  fetch('http://api.open-notify.org/iss-now.json')
     .then(res => res.json())
     .then(data => {
-      console.log(data);
-      const lat = data.latitude;
-      const lng = data.longitude;
+      const lat = data['iss_position']['latitude'];
+      const lng = data['iss_position']['longitude'];
       marker.setLatLng([lat, lng]);
       circle.setLatLng([lat, lng]);
     })
