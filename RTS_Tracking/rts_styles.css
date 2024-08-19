@@ -173,6 +173,7 @@ body {
   display: none;
   margin-right: 5%;
   transition: transform 0.5s ease-in-out;
+  transform-origin: center center;
 }
 
 #rover-img:hover {
@@ -237,5 +238,11 @@ body {
   #rover-img {
     width: 50%;
     height: 50%;
+  }
+  #rover-img:hover {
+    transform: scale(2.3);
+  }
+  .image-div:hover img {
+    transform: scale(1.7);
   }
 }
