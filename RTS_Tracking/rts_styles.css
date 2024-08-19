@@ -7,6 +7,7 @@ body {
   justify-content: space-between;
   height: 100vh;
   font-family: 'Orbitron', sans-serif;
+  background-color: #000;
 }
 
 #particles-js {
@@ -79,6 +80,7 @@ body {
 }
 
 .btns {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,8 +168,8 @@ body {
 }
 
 #rover-img {
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 40%;
   display: none;
   margin-right: 5%;
   transition: transform 0.5s ease-in-out;
@@ -198,6 +200,16 @@ body {
   }
 }
 
+@media (max-width: 1050px) {
+  .content-div {
+    width: 100%;
+  }
+  #rover-img {
+    width: 30%;
+    height: 30%;
+  }
+}
+
 @media (max-width: 900px) {
   .filters {
     display: block;
@@ -209,5 +221,21 @@ body {
   } */
   .main-title {
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .results {
+    flex-direction: column;
+  }
+  .settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #rover-img {
+    width: 50%;
+    height: 50%;
   }
 }
